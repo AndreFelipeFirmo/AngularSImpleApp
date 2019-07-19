@@ -1,3 +1,11 @@
-<p>
-  card works!
-</p>
+<div class="card">
+  <ng-container *ngTemplateOutlet="contentTitle"></ng-container>
+  <div class="card--content">
+    <div class="card--content-primary">
+      <ng-container *ngTemplateOutlet="contentPrimary"></ng-container>
+    </div>
+    <div class="card--content-segundary">
+      <ng-container *ngTemplateOutlet="contentSegundary"></ng-container>
+    </div>
+  </div>
+</div>
